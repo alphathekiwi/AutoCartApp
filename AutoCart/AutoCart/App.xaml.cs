@@ -1,8 +1,10 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Autocart.Views;
 
-namespace AutoCart
+
+namespace Autocart
 {
     public partial class App : Application
     {
@@ -10,7 +12,7 @@ namespace AutoCart
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new RegistrationPage();
         }
 
         protected override void OnStart()
