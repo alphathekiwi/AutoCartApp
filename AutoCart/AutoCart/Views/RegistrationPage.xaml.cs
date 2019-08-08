@@ -40,6 +40,10 @@ namespace Autocart.Views
             Device.BeginInvokeOnMainThread(async () =>
             { 
                 var result = await this.DisplayAlert("Congratulation", "User Registration Sucessfull", "Yes", "Cancel");
+
+                if (result)
+                    await Navigation.PushAsync(new LoginPage());
+
         });
                 
                 
